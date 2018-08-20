@@ -59,7 +59,7 @@
         <div class="row blog-entries">
           <div class="col-md-12 col-lg-8 main-content">
             
-            <form action="#" method="post">
+            <form action="index.html" method="post" target="_blank">
                   <div class="row">
                     <div class="col-md-4 form-group">
                       <label for="name">Text Customer ID to capture by Interaction Studio</label>
@@ -74,6 +74,7 @@
                         function getID() {
                           var result = document.getElementById(CustomerID).value;
                           document.cookie = 'Balita=' + encodeURIComponent(result);
+                          console.log(result);
                         }
                       </script>
 
