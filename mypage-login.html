@@ -71,7 +71,7 @@
                       <input type="submit" value="Login" class="btn btn-primary" onclick="getID()" href="index.html">
 
                       <script>
-                        var getID = function () {
+                        function getID() {
                           var result = document.getElementById(CustomerID).value;
                           document.cookie = 'Balita=' + encodeURIComponent(result);
                         }
